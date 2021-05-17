@@ -7,5 +7,5 @@ def home(res):
 def join(res):
   return render(res, "user/signup.html", {})
 
-def join(res):
+def login(res):
   return render(res, "user/login.html", {})
