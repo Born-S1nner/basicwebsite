@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'user/style.css' %}" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Website</title>
 </head>
 <body>
-  <nav>
-    <h1>Typical Website</h1>
-    <ul>
-      <li><a href="user/signup">Sign up</a></li>
-      <li><a href="user/login">Log in</a></li>
-      <li>Log out</li>
-    </ul>
-  </nav>
+  <h1>Typical Website</h1>
   {% block body %}
   {% endblock %}
 </body>
