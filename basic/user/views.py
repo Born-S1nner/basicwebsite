@@ -23,3 +23,6 @@ def join(res):
 
 def LoginReunioun(res):
   return render(res, "user/login.html", {})
+
+def Success(res):
+  return render(res, "user/unlock.html", {})
