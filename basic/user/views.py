@@ -4,7 +4,6 @@ from .models import Account
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
-
 # Create your views here.
 def home(res):
   return render(res, "user/home.html", {})
@@ -17,10 +16,10 @@ def join(res):
       CP = form.cleaned_data['password']
       NA = Account(username=CU, password=CP)
       NA.save()
-    return HttpResponseRedirect("user/login.html")
+    return HttpResponseRedirect("/")
   else:
     form = CreateAccount()
-  return render(res, "user/signup.html", {})
+  return render(res, "user/signup.html", {"form": form})
 
 def LoginReunioun(res):
   return render(res, "user/login.html", {})

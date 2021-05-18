@@ -2,5 +2,12 @@
 
 {% block body %}
   <h2>Sign up</h2>
+  <hr/>
+  <form method="POST" action="/user/signup/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit", name="save">Enter</button>
+  </form>
+  <br/>
   <a href="/" >Back</a>
 {% endblock %}
