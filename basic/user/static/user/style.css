@@ -6,3 +6,6 @@ body{
 a {
   color: gold;
 }
+.navbar {
+  border: 2px white solid;
+}
