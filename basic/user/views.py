@@ -21,8 +21,5 @@ def join(res):
     form = CreateAccount()
   return render(res, "user/signup.html", {"form": form})
 
-def LoginReunioun(res):
-  return render(res, "user/login.html", {})
-
 def Success(res):
   return render(res, "user/unlock.html", {})

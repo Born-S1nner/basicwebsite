@@ -1,4 +1,9 @@
-<h2>Log in</h2>
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'user/style.css' %}" />
+</head>
+<body>
+  <h2>Log in</h2>
   {% if form.errors %}
     <p>Your username and password are incorrect...</p>
   {% endif %}
@@ -7,3 +12,4 @@
     {{ form.as_p }}
   </form>
   <a href="/" >Back</a>
+</body>
