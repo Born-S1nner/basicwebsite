@@ -20,6 +20,3 @@ def join(res):
   else:
     form = CreateAccount()
   return render(res, "user/signup.html", {"form": form})
-
-def Success(res):
-  return render(res, "user/unlock.html", {})
